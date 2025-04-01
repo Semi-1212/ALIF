@@ -14,10 +14,11 @@
 <body>
 
   <!-- Top Bar (Black Section) -->
-<div class="top-bar">
+
+  <div class="top-bar">
     <div class="container">
         <div class="contact-info">
-            <span>📞 +251 912345678</span>
+            <span>📞 +251 913271706</span>
             <span>✉ info@touragency.com</span>
         </div>
         <div class="social-icons">
@@ -28,14 +29,10 @@
     </div>
 </div>
 
-<!-- Main Navbar (White Section) -->
 <nav class="navbar">
     <div class="container">
         <a class="navbar-brand" href="#">Tour Agency</a>
-        
-        <!-- Hamburger Menu for Mobile -->
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        
         <div class="nav-links">
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
@@ -45,6 +42,7 @@
         </div>
     </div>
 </nav>
+
 
 
   <!-- Hero Section -->
@@ -231,19 +229,19 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYOqdy7-yvM-yvpborjiUdeKh3GakDywA&callback=initMap"></script>
 
 
-    <!-- Tours Section -->
+<!-- Tours Section -->
 <section id="tours" class="container my-5">
     <h2 class="text-center section-title">Explore Addis Ababa</h2>
     <p class="text-center section-subtitle">Discover the rich history, culture, and beauty of Ethiopia's capital.</p>
-    
+
     <div class="row">
         <!-- Tour 1: National Museum -->
         <div class="col-md-4">
             <div class="tour-card">
                 <img src="images/addis-ababa-museum.jpg" class="tour-img" alt="National Museum">
-                <div class="tour-overlay">
+                <div class="tour-content">
                     <h5 class="tour-title">National Museum</h5>
-                    <p class="tour-text">See the famous Lucy fossil and Ethiopian artifacts.</p>
+                    <p class="tour-text">Home to the famous <strong>Lucy fossil</strong>, this museum showcases Ethiopia’s ancient and modern artifacts, telling the rich story of its history.</p>
                     <a href="#" class="tour-btn">Book Now</a>
                 </div>
             </div>
@@ -253,9 +251,9 @@
         <div class="col-md-4">
             <div class="tour-card">
                 <img src="images/entoto.jpg" class="tour-img" alt="Entoto Park">
-                <div class="tour-overlay">
+                <div class="tour-content">
                     <h5 class="tour-title">Entoto Park</h5>
-                    <p class="tour-text">Enjoy nature, hiking, and breathtaking city views.</p>
+                    <p class="tour-text">Located on the city's highest peak, this park offers breathtaking <strong>views, hiking trails, and cultural exhibits</strong>.</p>
                     <a href="#" class="tour-btn">Book Now</a>
                 </div>
             </div>
@@ -265,15 +263,52 @@
         <div class="col-md-4">
             <div class="tour-card">
                 <img src="images/merkato.jpg" class="tour-img" alt="Merkato Market">
-                <div class="tour-overlay">
+                <div class="tour-content">
                     <h5 class="tour-title">Merkato Market</h5>
-                    <p class="tour-text">Explore Africa's largest open-air market.</p>
+                    <p class="tour-text">Experience the vibrant and colorful atmosphere of <strong>Africa’s largest open-air market</strong>, where you can shop for local goods and souvenirs.</p>
+                    <a href="#" class="tour-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour 4: Holy Trinity Cathedral -->
+        <div class="col-md-4">
+            <div class="tour-card">
+                <img src="images/holy-trinity.jpg" class="tour-img" alt="Holy Trinity Cathedral">
+                <div class="tour-content">
+                    <h5 class="tour-title">Holy Trinity Cathedral</h5>
+                    <p class="tour-text">This <strong>majestic church</strong> features stunning stained-glass windows and is the final resting place of Emperor Haile Selassie.</p>
+                    <a href="#" class="tour-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour 5: Red Terror Museum -->
+        <div class="col-md-4">
+            <div class="tour-card">
+                <img src="images/redterror.jpg" class="tour-img" alt="Red Terror Martyrs' Museum">
+                <div class="tour-content">
+                    <h5 class="tour-title">Red Terror Museum</h5>
+                    <p class="tour-text">A museum dedicated to the victims of Ethiopia’s <strong>Red Terror period</strong>, showcasing historical artifacts and personal stories.</p>
+                    <a href="#" class="tour-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour 6: Unity Park -->
+        <div class="col-md-4">
+            <div class="tour-card">
+                <img src="images/unity-park.jpg" class="tour-img" alt="Unity Park">
+                <div class="tour-content">
+                    <h5 class="tour-title">Unity Park</h5>
+                    <p class="tour-text">Located at the Grand Palace, Unity Park highlights <strong>Ethiopia’s cultural diversity</strong> with exhibits, gardens, and historical sites.</p>
                     <a href="#" class="tour-btn">Book Now</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="container my-5">
@@ -286,24 +321,47 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2 class="text-center">Contact Us</h2>
-        <form class="row g-3">
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" required>
+   <!-- Contact Section -->
+<section id="contact" class="container my-5">
+    <div class="contact-container">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us A Message</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send</button>
+        </div>
+
+        <!-- Right Side: Contact Information -->
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p><strong>Address</strong> addisAbaba, Ethiopia</p>
+
+            <p><strong>Email</strong><br> alifabdurahman@gmail.com</p>
+
+            <p><strong>Phone</strong> +251 913271706</p>
+            <p><strong>WhatsApp</strong> +25191111111</p>
+
+            <p><strong>Follow Us</strong></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/yourhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/youraccount" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/yourchannel" target="_blank"><i class="fa-brands fa-telegram"></i></a>
             </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="col-12">
-                <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </div>
-        </form>
-    </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</section>
 
  <!-- Footer -->
  <footer class="text-dark py-4" style="background-color:#474240;">
